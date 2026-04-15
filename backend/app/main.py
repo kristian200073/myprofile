@@ -1,11 +1,17 @@
+import os
+from pathlib import Path
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BUILD_DIR = BASE_DIR / "frontend" / "build"
+
 app = FastAPI(title="Profile API")
 # Mount static assets
-app.mount("/static", StaticFiles(directory="../../frontend/build/static"), name="static")
+app.mount("/static", StaticFiles(directory=str(BUILD_DIR / "static")), name="static")
 
 app.add_middleware(
     CORSMiddleware,
@@ -40,7 +46,7 @@ def get_profile():
 # Serve index.html for all non-API routes (catch-all, must be last)
 @app.get("/{full_path:path}")
 def serve_frontend(full_path: str):
-    return FileResponse("../../frontend/build/index.html")
+    return FileResponse(str(BUILD_DIR / "index.html"))
 
 if __name__ == "__main__":
     import uvicorn

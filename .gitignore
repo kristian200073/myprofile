@@ -2,6 +2,7 @@
 
 # dependencies
 backend/.venv
+backend/venv
 frontend/node_modules
 backend/app/__pycache__
-.env
+.envbackend/venv/
