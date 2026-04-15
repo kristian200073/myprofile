@@ -1,0 +1,119 @@
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #ef5350;
+}
+
+/* ---------- Header ---------- */
+.header {
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+
+.header__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto 1rem;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #b0bec5;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(4px);
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #90caf9;
+  border-bottom: 2px solid rgba(144, 202, 249, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+/* ---------- Skills ---------- */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+.skills-list li {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Experience / Education ---------- */
+.timeline-item {
+  margin-bottom: 1.2rem;
+}
+
+.timeline-item h3 {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.timeline-item .period {
+  font-size: 0.85rem;
+  color: #90a4ae;
+}
+
+.timeline-item p {
+  margin-top: 0.3rem;
+  color: #b0bec5;
+  line-height: 1.5;
+}
+
+/* ---------- Contact ---------- */
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.contact-list li {
+  font-size: 1rem;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: 2rem 0 1rem;
+  color: #78909c;
+  font-size: 0.85rem;
+}
