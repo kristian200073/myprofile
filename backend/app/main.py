@@ -15,7 +15,7 @@ app.mount("/static", StaticFiles(directory=str(BUILD_DIR / "static")), name="sta
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://myprofile-16x8.onrender.com/"],
+    allow_origins=["https://myprofile-16x8.onrender.com:8000"],
     allow_methods=["GET"],
     allow_headers=["*"],
 )
